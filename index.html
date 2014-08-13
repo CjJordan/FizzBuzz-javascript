@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FizzBuzz</title>
+</head>
+<body>
+   
+    
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        
+            for (var count = 1; count <= 100; count ++){
+                if(count % 3 == 0){
+                    if (count % 5 == 0){
+                        $("body").append("<p>fizz buzz</p>");
+                    }else{
+                        $("body").append("<p>fizz</p>");
+                    }
+                }else if (count % 5 == 0){
+                    $("body").append("<p>buzz</p>");
+                }else{
+                    $("body").append("<p>" + count + "</p>");
+                }
+            }
+        });
+    </script>
+</body>
+</html>
